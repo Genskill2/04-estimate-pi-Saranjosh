@@ -5,6 +5,20 @@
 
 float wallis_pi(int);
 
+
+float wallis_pi(int n)
+{
+  float q, r=1.0 ;
+  for(int i=1; i<n; i++) {
+    float x= 4*i*i;
+    float y=x-1;
+    q= x/y;
+    r = r*q;
+  }
+  return (r*2);
+}
+
+
 int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
@@ -24,15 +38,3 @@ int main(void) {
   }
 }
 
-float wallis_pi(int n)
-{
-  float q, r=1.0 ;
-  for(int i=1; i<n; i++) {
-    float x= 4*i*i;
-    float y=x-1;
-    q= x/y;
-    r = r*q;
-  }
-  r=r*2;
-  return r;
-}
