@@ -33,5 +33,6 @@ float wallis_pi(int n)
     q= x/y;
     r = r*q;
   }
-  return r*=2;
+  r=r*2;
+  return r;
 }
