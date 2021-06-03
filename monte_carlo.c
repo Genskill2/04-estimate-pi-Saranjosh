@@ -6,7 +6,7 @@
 float mc_pi(int);
 
 float frandom() {
-  long int q = random();
+  long int q = frandom();
   float ret = (float)q/(float)RAND_MAX;
   return ret;
 }
@@ -39,5 +39,19 @@ int main(void) {
   }
 }
 
-
+float mc_pi(int n){
+float x,y;
+x= frandom();
+y= frandom();
+int area_of_circle=0;
+int area_of_square=0;
+float z= x*x + y*y;
+for(int i=0;i<n;i++){
+    if(z<=1){
+      area_of_circle+=1;
+      area_of_square+=1;
+    }
+}
+float pi = (flaot)4*area_of_circle/are
+}
 
