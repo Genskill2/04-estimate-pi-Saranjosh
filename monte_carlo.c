@@ -52,6 +52,6 @@ for(int i=0;i<n;i++){
       area_of_square+=1;
     }
 }
-float pi = (flaot)4*area_of_circle/are
+float pi = (float)4*area_of_circle/area_of_square;
 }
 
