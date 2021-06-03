@@ -52,4 +52,5 @@ for(int i=0;i<n;i++){
     }
 }
 float pi = (float)4*area_of_circle/area_of_square;
+  return pi;
 }
